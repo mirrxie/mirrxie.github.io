@@ -4,23 +4,141 @@
 <head>
 
 <meta charset="UTF-8">
-<title>Bare - Start Bootstrap Template</title>
+<title>Masterchef</title>
 
 <!-- All the bootstrap stuff -->
 
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+<link rel="stylesheet" type="text/css" href="mySite.css">
 <link rel="icon" href="favicon.ico" type="image/x-icon"/>
 <link rel="shortcut icon" href="250px-MasterChef_Logo_&_Wordmark.svg.png" type="image/x-icon"/>
 
 </head>
 
 <body>
+  <!-- svg is defined here because of a Safari bug with <use> -->
+  <svg>
+    <defs>
+      <g id="p">
+        <path opacity=".2" d="M0 2h252s-3.3 40.7-2.7 128.3C249 216 252 272 252 272s-88-2-124.3-2C91.3 270 0 272 0 272V0z"/><path fill="#f4f3f1" d="M0 0h248v270H0z"/><path fill="#4f5150" d="M8 10h233v203H8z"/>
+      </g>
+      <g id="polaroid">
+        <use xlink:href="#p" transform="rotate(15)" x="175" y="50"/>
+        <use xlink:href="#p" transform="rotate(-5)" x="5" y="25"/>
+      </g>
+    </defs>
+  </svg>
+
+  <div class="demo__info">
+    Pure CSS parallax scrolling with navigation and CSS scrolling with scroll-behavior: smooth by Keith Clark. Please read the <a href="https://keithclark.co.uk/articles/practical-css-parallax/">blog post</a> for more information.
+  </div>
+
+  <nav>
+    <ul class="nav">
+      <li><a href="#slide-1">fruit basket</a></li>
+      <li><a href="#slide-2">lemons</a></li>
+      <li><a href="#slide-3">apples</a></li>
+      <li><a href="#slide-4">strawberries</a></li>
+      <li><a href="#slide-5">bananas</a></li>
+      <li><a href="#slide-6">reach out!</a></li>
+    </ul>
+  </nav>
+
+  <div class="slides">
+    <div class="slide" id="slide-1">
+      <div class="slide__bg"></div>
+      <div class="slide__content">
+        <div class="slide__text">
+          <h1 id="slide-1-title">My Favorite Fruits</h1>
+          <p>This was originally going to be my favorite Masterchef dishes website but I now am more passionate about fruits.</p>
+          <p>Fruits are
+          <br> 1. more attainable.
+          <br> 2. better for you.
+          <br> 3. won't let Gordan Ramsay yell at you.</p>
+          <p>
+          <br>
+          <br>
+          <a href="miranda 2019 resume.pdf">Here are my credentials for why I have a good taste in fruit.</a>
+        </div>
+        <div class="slide__image">
+          <img src="fruits.png" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <div class="slide" id="slide-2">
+      <div class="slide__bg"></div>
+      <div class="slide__content">
+        <div class="slide__text">
+          <h1 id="slide-2-title">Lemons</h1>
+          <p>By itself, it's sour, acidic, painful, left aside as a bathroom aesthetic.</p>
+          <p>But paired with something much more sugary, it is one of the most powerful flavors on Earth - with honey it can cure sickness, with sugar it can cure anger.</p>
+        </div>
+        <div class="slide__image">
+           <img src="lemons.png" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <div class="slide" id="slide-3">
+      <div class="slide__bg"></div>
+      <div class="slide__content">
+        <div class="slide__text">
+          <h1 id="slide-3-title">Apples</h1>
+          <p> Apples are one of the classic fruits of our society. Johnny Appleseed really liked Apples, and he is a great American classic. Isaac Newton wouldn't have known about gravity if it weren't for apples. Teachers love them, doctors hate them. They shaped our society.</p>
+          <p>Not only that, but apples also taste <i>so good.</i> They're sweet and juicy. You can cut them, you can peel them, you can eat them whole. You can bake them, fry them, dip them in caramel. No one judges you on how you eat an apple. </p>
+        </div>
+        <div class="slide__image">
+          <img src="apple.png" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <div class="slide" id="slide-4">
+      <div class="slide__bg"></div>
+      <div class="slide__content">
+        <div class="slide__text">
+          <h1 id="slide-4-title">Strawberries</h1>
+          <p>If a fruit could be America's Sweetheart, it would be strawberries. Because of the way it is planted, it's one of the most down-to-earth and grounded fruits as well. They are sweet and innocent, and we must protect them at all cost.</p>
+          <p>Strawberries keep their heart on their sleeves. They don't hide their seeds and let everyone see them. Also, the way they are structured means they are easy bruised and battered. They don't have peels to protect them, and they are just naturally soft.</p>
+        </div>
+        <div class="slide__image">
+          <img src="strawberry.gif" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <div class="slide" id="slide-5">
+      <div class="slide__bg"></div>
+      <div class="slide__content">
+        <div class="slide__text">
+          <h1 id="slide-5-title">Bananas</h1>
+          <p>Bananass have always been misunderstood. No one knew they were berries, everyone laughed at them, all BU students take them for granted when they steal them for dining halls. Nevertheless, bananas persist as great tasting and versatile fruits.</p>
+          <p>One of the best things about bananas is that they don't let you down. Even when bananas are getting too ripe and brown, you can bake them into banana bread, or turn them into banana pacakes. No matter, bananas are still true to the banana flavor and you will definitely notice if they disappear one day. </p>
+        </div>
+        <div class="slide__image">
+          <img src="banana.png" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <div class="slide" id="slide-6">
+
+      <div class="slide__bg"></div>
+      <div class="slide__content">
+        <div class="slide__text">
+          <h1 id="slide-6-title">Wanna Reach Out?</h1>
+          <p>I know there are many fruits that deserve to be on this list, but these are my top few. Any suggestions or opinions? I love talking about fruit. Feel free to click on the mailbox and deliver me a message!</p>
+        </div>
+        <div class="slide__image">
+          <a href="mailto: minqi.miranda.xie@gmail.com""><img src="mailbox.png" alt="" /></a>
+        </div>
+      </div>
+    </div>
+
+  </div>
 
     <!-- Navigation -->
+    <!--
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
       <div class="container">
         <a class="navbar-brand" href="#">HOME</a>
@@ -38,9 +156,9 @@
         </div>
       </div>
     </nav>
-
+    -->
     <!-- Page Content -->
-    <div class="container">
+    <!-- <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
           <h1 class="mt-5">I like watching Masterchef</h1>
@@ -63,7 +181,7 @@
      </div>
      <div class="col-lg-2 offset-lg-2"><img src="250px-MasterChef_Logo_&_Wordmark.svg.png" alt="" /></div>
 
-    </div>
+    </div> -->
 
 </body>
 
