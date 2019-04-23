@@ -1,5 +1,4 @@
 
-
 /* demo styles
 --------------------------------------------- */
 
@@ -16,6 +15,7 @@ body {
 
 h1, p {
   margin-bottom: 1.5em;
+  font: Avantgarde;
 }
 
 body > svg {
@@ -46,7 +46,7 @@ body > svg {
   border-radius: 3px;
   background: rgba(0,0,0,.6);
 }
-.nav a:hover {
+.nav a:not(:hover) {
   text-decoration: none;
 }
 
@@ -83,27 +83,22 @@ body > svg {
 /* slide backgrounds */
 
 #slide-1 .slide__bg {
- 	background-image: url("background1.jpg");
+  background-image: url("background1.jpg")
 }  
 #slide-2 .slide__bg {
-  	background-image: url("background1.jpg");
-  );
+  background-image: url("background1.jpg")
 }
 #slide-3 .slide__bg {
-  	background-image: url("background1.jpg");
-  );
+   background-image: url("background1.jpg")
 }
 #slide-4 .slide__bg {
-  	background-image: url("background1.jpg");
-  );
+   background-image: url("background1.jpg")
 }
 #slide-5 .slide__bg {
-  	background-image: url("background1.jpg");
-  );
+  background-image: url("background1.jpg")
 }
 #slide-6 .slide__bg {
-  	background-image: url("background1.jpg");
-  );
+   background-image: url("background1.jpg")
 }
 
 
